@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-container {
+    padding: 2rem 0 8rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    background: url('.././../../assets/hero-image-github-profile.png');
+    background-size: cover;
+}
+.search-div {
+    background-color: #20293A;
+    padding: 1.2rem;
+    border-radius: 8px;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    color: #20293A;
+}
+.search-div .search-btn {
+    outline: none;
+    background: none;
+    color: #4A5567;
+    fill: #4A5567;
+}
+.search-div input[type="text"] {
+    outline: none;
+    background: transparent;
+    border: none;
+    color: #4A5567;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.repo-container {
+    width: 100%;
+    background-color: #20293A;
+    height: 100vh;
+}
+@media (max-width: 1024px) {
+    .search-div{
+        width: 50%;
+    }
+}
+@media (max-width: 540px) {
+    .search-div{
+        width: 80%;
+    }
+}

@@ -1,0 +1,30 @@
+.component-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background: linear-gradient(to right,#111729, #1D1B48);
+    border-radius: 16px;
+    padding: 2rem;
+}
+.component-container .name {
+    color: #CDD5E0;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.component-container .one-liner {
+    color: #97A3B6;
+    font-weight: 400;
+}
+.component-container .minor-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #97A3B6;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.component-container .minor-details div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}

@@ -1,0 +1,101 @@
+.repository-container {
+    display: flex;
+    background-color: #20293A;
+    width: 100%;
+}
+.repositories-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
+.repositories-container .banner {
+    display: flex;
+    justify-content: space-around;
+    gap: 5em;
+    align-items: center;
+}
+.repositories-container .banner img {
+    width: 150px;
+    height: 150px;
+    margin-top: -3rem;
+    border-radius: 16px;
+    padding: 0.5rem;
+    background-color: #20293A;
+}
+.repositories-container .banner .banner-section2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+.repositories-container .banner .banner-section2 .follower-details {
+    display: flex;
+    gap: 1rem;
+    background-color: #111729;
+    padding: 1.2rem;
+    border-radius: 12px;
+}
+.repositories-container .banner .banner-section2 .follower-details .text {
+    color: #4A5567;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.repositories-container .banner .banner-section2 .follower-details .number {
+    border-left: 2px solid #20293A;
+    padding: 0 0rem 0 1.5rem;
+    color: #CDD5E0;
+
+}
+.git-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 75%;
+    margin: 1rem auto;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.git-content .heading {
+    color: #CDD5E0;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.git-content .description {
+    color: #4A5567;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.repository {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+.footer {
+    color: #97A3B6;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+@media (max-width: 768px) {
+    .repositories-container, .git-content, .repository {
+        width: 85%;
+    }
+    .banner-section2 {
+        flex-direction: column;
+    }
+    .repositories-container .banner img {
+        margin-top: -15rem;
+    }
+}
+@media (max-width: 540px) {
+    .repositories-container, .git-content, .repository {
+        width: 90%;
+    }
+    .repository {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
